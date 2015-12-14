@@ -1,0 +1,588 @@
+@charset  "UTF-8";
+
+* {
+    border: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #190121;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 1;
+    filter: alpha(opacity=90);
+/* For IE8 and earlier */
+}
+
+body {
+    font-family: Palatino,Baskerville,Georgia,serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section {
+    margin: 0 auto;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: arial;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #000;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: tahoma;
+    text-align: center;
+}
+
+p {
+    color: grey;
+    text-align: center;
+    font-family: arial;
+    text-transform: lowercase;
+}
+
+li {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin: 25px 20px 25px 0;
+    font-weight: 800;
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* top navigation
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#logo {
+    position: relative;
+    z-index: 100;
+    width: 137px;
+    float: left;
+    margin: 10px 0 10px 20px;
+}
+
+#logo h1 {
+    color: #fff;
+    font-family: Arial;
+    font-size: 1em;
+    text-align: left;
+}
+
+#logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu {
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    width: 210px;
+    float: right;
+    margin: auto 30px auto 0;
+    font-family: tahoma;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover {
+    opacity: .5;
+    filter: alpha(opacity=50);
+/* For IE8 and earlier */
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* hero iamge
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#hero {
+    background-color: #000;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 50px;
+    z-index: 0;
+}
+
+#heroimage {
+    opacity: 1;
+    filter: alpha(opacity=50);
+    z-index: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://static.pexels.com/photos/1139/black-and-white-city-skyline-buildings.jpg);
+}
+
+#herotext {
+    z-index: 900;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 175px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    font-size: 4em;
+    font-family: arial;
+    position: relative;
+    text-transform: none;
+    display: none;
+}
+
+#heroimageAbout {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 1393px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/21/Adams_The_Tetons_and_the_Snake_River.jpg);
+    top: -393px;
+}
+
+#heroimageServices {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 2600px;
+    background-image: url(https://charlottelouisekelly.files.wordpress.com/2015/02/mg_5706.jpg);
+    top: -1600px;
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* body content
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.layout {
+    max-width: 1080px;
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.layout-2 {
+    max-width: 1080px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.row {
+    height: 50%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-1 {
+    width: 42%;
+    float: left;
+    margin: 3% 2%;
+}
+
+.col-2 {
+    width: 46%;
+    float: left;
+    margin: 3% 2%;
+}
+
+.col-1 img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.col-1 h1 {
+    margin-top: 220px;
+}
+
+#ctabutton {
+    border: 3px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+/* text-align: center; */
+    font-family: arial;
+    padding: 20px 26px;
+    top: 50px;
+/* left: 43%; */
+    border-radius: 25px;
+    font-weight: 900;
+    position: relative;
+}
+
+#ctabutton:hover {
+    background-color: #000;
+    color: #fff;
+    transition: color 1s ease;
+}
+
+#ctahpwrap {
+    width: 100%;
+    height: 150px;
+    background-color: #ddd;
+}
+
+#ctahpwrap .ctabutton {
+/* left: 42%; */
+}
+
+#backtotop {
+    border: 3px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    padding: 20px 26px;
+    top: 50px;
+    left: 20%;
+    border-radius: 25px;
+    font-weight: 900;
+    position: relative;
+}
+
+footer {
+    background-color: #190121;
+    height: 100px;
+}
+
+@media only screen and (max-width: 940px) {
+    body {
+        background-color: #add8e6;
+    }
+
+    .layout {
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 0;
+    }
+
+    .row {
+        height: 50%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .col-1 {
+        width: 40%;
+        float: left;
+        margin: 0 5%;
+    }
+
+    .col-1 h1 {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    body {
+        background-color: red;
+    }
+
+    .layout {
+        width: 100%;
+        height: 800px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 0;
+    }
+
+    .row {
+        height: 50%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .col-1 {
+        width: 40%;
+        float: left;
+        margin: 0 5%;
+    }
+
+    .col-1 h1 {
+        margin-top: 70px;
+    }
+
+    #ctabutton {
+        border: 3px solid #000;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: arial;
+        padding: 20px 26px;
+        top: 50px;
+        left: 23%;
+        border-radius: 25px;
+        font-weight: 900;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        background-color: green;
+    }
+
+    .layout {
+        width: 100%;
+        height: 2100px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 0;
+    }
+
+    .row {
+        height: 50%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .col-1 {
+        width: 90%;
+        float: left;
+        margin: 0 5%;
+    }
+
+    .col-2 a {
+        width: 30%;
+        float: left;
+        margin: 0 6%;
+    }
+
+    .col-1 h1 {
+        margin-top: 25px;
+    }
+
+    .col-1 p {
+        margin-bottom: 25px;
+    }
+
+    #ctabutton {
+        border: 3px solid #000;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: arial;
+        padding: 20px 26px;
+        top: 50px;
+        border-radius: 25px;
+        font-weight: 900;
+    }
+}
+
+/*WebDesignAndSuch.com*/
+/*pop-up window*/
+#container {
+    width: 780px;
+    background: #FFF;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: left;
+}
+
+#mainContent {
+    padding: 0 60px;
+    min-height: 600px;
+    line-height: 25px;
+}
+
+img {
+    border: 0;
+}
+
+/*LINKS*/
+#mainContent a:link,#mainContent a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background: #000;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+#mainContent a:hover,#mainContent a:active {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background: #333;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* styles pop-up
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#blanket {
+    background-color: #111;
+    opacity: .65;
+    *background: none;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#popUpDiv {
+    position: absolute;
+    background-image: url(http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Richard-Branson-quote.jpg);
+    width: 995px;
+    height: 632px;
+    border: 5px solid #000;
+    z-index: 9002;
+    background-color: #fff;
+    top: 1925px;
+}
+
+#popUpDiv a {
+    position: relative;
+    top: -20px;
+    left: -505px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 3px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-family: arial;
+    padding: 5px;
+}
+
+#popUpDivmj {
+    position: absolute;
+    background-image: url(http://motivational-quotes-for-athletes.com/wp-content/uploads/2014/03/michael-jordan-motivational-quote-6-credit-96dpi.jpg);
+    width: 984px;
+    height: 588px;
+    border: 5px solid #000;
+    z-index: 10002;
+    background-color: #fff;
+    top: -560px;
+    left: 3% !important;
+}
+
+#popUpDivmj a {
+    position: relative;
+    top: -20px;
+    left: -505px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 3px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-family: arial;
+    padding: 5px;
+}
+
+#blanketmj {
+    background-color: #111;
+    opacity: .65;
+    *background: none;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.imagehover {
+    opacity: 1;
+    z-index: -1;
+}
+
+.imagehover:hover {
+    opacity: .2;
+    transition: opacity 1s ease;
+}
+
+.page {
+    position: relative;
+    height: 100%;
+}
+
+.popup {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.show-popup .popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* expansion widget
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.tb-main {
+    position: relative;
+    width: 1080px;
+    height: 80px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.tb-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#tb-content {
+    margin-top: 26px;
+}
+
+.tb-close {
+    margin-top: 10px;
+}
+
+img {
+    repeat: none;
+}

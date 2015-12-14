@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HomePage</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="stylesV1.css" rel="stylesheet" type="text/css"></link>
+    <script src="combined.js" type="text/javascript"></script>
+
+    <link href="http://vjs.zencdn.net/vjs-version/video-js.css" rel="stylesheet"><!-- If you'd like to support IE8 -->
+
+    <script type="text/javascript" src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+</head>
+<body>
+    <!-- header begin -->
+    <script type="text/javascript">
+    </script>
+    <header>
+        <nav class="header">
+            <div id="logo">
+                <a href="#top" title="T. Brooks Digital Agency">
+                <h1>T. Brooks<br>
+                Digital Agency</h1></a>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="#ctabutton" title="Services">Branson</a>
+                </li>
+                <li>
+                    <a href="#empire-click" class="empire-click" title="Services">Empire</a>
+                </li>
+            </ul>
+        </nav>
+    </header><!-- hero begin -->
+    <section>
+        <div id="hero">
+            <div id="heroimage"></div>
+            <p id="herotext">T. Brooks is a digital agency focusing in strategy, website optimization, testing, design and technology for
+            luxury and lifestyle brands</p>
+        </div>
+        <div class="layout">
+            <div class="row">
+                <!-- section about the company -->
+                <div class="col-1"><img src="https://c2.staticflickr.com/8/7215/6856179714_6a1b9f9f10_b.jpg"></div>
+                <div class="col-1">
+                    <h1>Why Choose T. Brooks?</h1>
+                    <p>In eu tristique quam, ut vestibulum quam. Duis ut mi egestas, rhoncus arcu sit amet, rhoncus mauris. Cras a nulla
+                    dapibus, tristique ex at, tempus ex. Donec fermentum massa quis tempus facilisis. Fusce nec viverra velit. Nullam
+                    iaculis sapien sit amet erat viverra commodo. Mauris sagittis ullamcorper leo eget auctor.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- section about the company -->
+                <div class="col-1">
+                    <h1>How do you get started?</h1>
+                    <p>In eu tristique quam, ut vestibulum quam. Duis ut mi egestas, rhoncus arcu sit amet, rhoncus mauris. Cras a nulla
+                    dapibus, tristique ex at, tempus ex. Donec fermentum massa quis tempus facilisis. Fusce nec viverra velit. Nullam
+                    iaculis sapien sit amet erat viverra commodo. Mauris sagittis ullamcorper leo eget auctor.</p>
+                </div>
+                <div class="col-1"><img src="https://c2.staticflickr.com/8/7215/6856179714_6a1b9f9f10_b.jpg"></div>
+            </div>
+        </div>
+        <div id="ctahpwrap">
+            <!--POPUP-->
+            <div id="blanket" style="display:none;"></div>
+            <div id="popUpDiv" style="display:none;">
+                <a href="##" onclick="popup('popUpDiv')">X</a>
+            </div><a href="##" id="ctabutton" onclick="popup('popUpDiv')">Richard Branson</a> <!-- / POPUP-->
+        </div>
+        <div class="layout-2">
+            <div class="row">
+                <!--POPUP-->
+                <div class="col-2">
+                    <div id="blanketmj" style="display:none;"></div>
+                    <div id="popUpDivmj" style="display:none;">
+                        <a href="##" onclick="popup('popUpDivmj')">X</a>
+                    </div><a href="##" onclick="popup('popUpDivmj')"><img class="imagehover" src="imgs/michaeljordan.png"></a>
+                </div><!-- / POPUP--><!--POPUP-->
+                <div class="col-2">
+                    <a href="##" onclick="abrahamlincoln()"><img class="imagehover" src="imgs/abrahamlincoln.png"></a>
+                </div><!-- / POPUP-->
+            </div>
+        </div>
+        <div class="tb-main" id="empire"><img src="imgs/tower_lights-ybbyyb.jpg"> <img alt="" class="tb-expand tb-btn" src=
+        "imgs/expand.png"> <img alt="" class="tb-close tb-btn" src="imgs/collapse.png"></div>
+    </section>
+    <footer></footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+        var close = $('.tb-close').fadeOut(0);
+        var calling = $('.tb-main');
+        var togg = true;
+        $('.tb-btn').click(function() {
+            if (togg) {
+                close.fadeIn(200);
+                calling.animate({
+                    height: 1379
+                });
+            } else {
+                calling.animate({
+                    height: 80
+                });
+                close.fadeOut(200);
+            }
+            togg = !togg;
+        });
+    });</script>
+            <script type="text/javascript">
+        jQuery(function($) {
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+        $(".header").addClass(".header-short");
+    }
+    else {
+        $(".header").removeClass("not-.menu-short ");
+    }
+});
+           });
+
+
+    $('.empire-click').click(function(){
+        $('html, body').animate({scrollTop:
+        	$('#empire').position().top}, 'slow');
+        return false;
+    });
+        $("a[href='#top']").click(function() {
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     return false;
+    });
+
+      $("a[href='#top']").click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+        return false;
+    });
+    $("a[href='#ctabutton']").click(function() {
+        $("html, body").animate({
+            scrollTop: 2300
+        }, "slow");
+        return false;
+    });
+    $("a[href='http://www.aeropostale.com/girls-clothing/features/two-you/family.jsp?categoryId=84199616#84163056']").click(function() {
+        $('html, body').animate({scrollTop:$('#84163056').position().top}, 'slow');
+        return false;
+    });
+        </script>
+</body>
+</html>
